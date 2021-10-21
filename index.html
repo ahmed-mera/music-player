@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTFEVMMH5J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-KTFEVMMH5J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../page3/images/logo.red.pieno.png"/>
+    <meta name="author" content="Ahmed Mera">
+    <link rel="stylesheet" href="./css/main.css?v=0.2">
+    <title>Songs</title>
+</head>
+<body>
+
+
+<div class="example-container">
+    <div class="left">
+        <div id="white-player">
+            <div class="white-player-top">
+                <div>
+                    &nbsp;
+                </div>
+
+                <div class="center">
+                    <span class="now-playing">Now Playing</span>
+                </div>
+
+                <div>
+                    <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/dynamic-songs/show-playlist.svg" class="show-playlist" alt="list songs"/>
+                </div>
+            </div>
+
+            <div id="white-player-center">
+                <img data-amplitude-song-info="cover_art_url" class="main-album-art" alt="cover art" src=""/>
+
+                <div class="song-meta-data">
+                    <span data-amplitude-song-info="name" class="song-name"></span>
+                    <span data-amplitude-song-info="artist" class="song-artist"></span>
+                </div>
+
+                <div class="time-progress">
+                    <div id="progress-container">
+                        <input type="range" class="amplitude-song-slider"/>
+                        <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+                        <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+                    </div>
+
+                    <div class="time-container">
+                <span class="current-time">
+                  <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+                </span>
+                        <span class="duration">
+                    <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+                  </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="white-player-controls">
+                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+                <div class="amplitude-prev" id="previous"></div>
+                <div class="amplitude-play-pause" id="play-pause"></div>
+                <div class="amplitude-next" id="next"></div>
+                <div class="amplitude-repeat" id="repeat"></div>
+            </div>
+
+            <div id="white-player-playlist-container">
+                <div class="white-player-playlist-top">
+                    <div>
+
+                    </div>
+                    <div>
+                        <span class="queue">Queue</span>
+                    </div>
+                    <div>
+                        <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/dynamic-songs/close.svg" class="close-playlist" alt="close button"/>
+                    </div>
+                </div>
+
+                <div class="white-player-up-next">
+                    Up Next
+                </div>
+
+                <!--       ######################################## PLAY LISTS START ####################################             -->
+                <div class="white-player-playlist" id="myPlaylist">
+
+
+                    <!--                    <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">-->
+                    <!--                        <img src="img/Human_-_Rag'n'Bone_Man_Single.png" alt="song cover"/>-->
+
+                    <!--                        <div class="playlist-song-meta">-->
+                    <!--                            <span class="playlist-song-name">Human</span>-->
+                    <!--                            <span class="playlist-artist-album">Rag’n’Bone Man &bull; Human (Remixes)</span>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+
+
+                </div>
+                <!--       ######################################## PLAY LISTS END ####################################             -->
+
+                <div class="white-player-playlist-controls">
+                    <img data-amplitude-song-info="cover_art_url" class="playlist-album-art" alt="" src=""/>
+
+                    <div class="playlist-controls">
+                        <div class="playlist-meta-data">
+                            <span data-amplitude-song-info="name" class="song-name"></span>
+                            <span data-amplitude-song-info="artist" class="song-artist"></span>
+                        </div>
+
+                        <div class="playlist-control-wrapper">
+                            <div class="amplitude-prev" id="playlist-previous"></div>
+                            <div class="amplitude-play-pause" id="playlist-play-pause"></div>
+                            <div class="amplitude-next" id="playlist-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
+<script defer src="./js/main.js?v=0.3"></script>
+</body>
+</html>
